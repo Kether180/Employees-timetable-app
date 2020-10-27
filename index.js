@@ -4,7 +4,7 @@ const app = express()
 const port = process.env.PORT || 3000 // is use for heroku 
 
 app.get('/', function(req, res) {
-    res.send('IT STILL WORKS!!!!!!')
+    res.send('go and have a drink!!!!!!')
 })
 
 app.get('/about', function(req, res) {
