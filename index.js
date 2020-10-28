@@ -12,10 +12,11 @@ app.get('/meditation', function (req, res) {
     res.sendFile(fileName);
 })
 
-/*app.get('/', function(req, res) {
+app.get('/', function(req, res) {
     res.send('go and have a drink!!!!!!')
-})
 
+
+})
 /*app.get('/about', function(req, res) {
     res.send('THIS IS THE ABOUT ENDPOINT')
 })*/
