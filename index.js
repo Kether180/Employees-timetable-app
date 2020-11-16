@@ -6,20 +6,26 @@ const port = process.env.PORT || 3000 // is use for heroku
 
 app.use(express.static('images'));
 
-app.get('/meditation', function (req, res) {  
+app.get('/time-management', function (req, res) {  
 
-    const fileName = path.resolve(__dirname, 'images/meditation.jpg')
+    const fileName = path.resolve(__dirname, 'images/time-management.jpg')
     res.sendFile(fileName);
 })
 
 app.get('/', function(req, res) {
-    res.send('go and have a drink!!!!!!')
+    res.send('Welcome To Our Time Management System')
 
 
 })
-/*app.get('/about', function(req, res) {
-    res.send('THIS IS THE ABOUT ENDPOINT')
-})*/
+
+app.get('/time-schedule', function(req, res) {
+    res.send(' Please Fill Up Your Working Time Slots')
+})
+
+app.get('/project-management', function(req, res) {
+    res.send('Project Management ')
+})
+
 
 app.listen(port, function() {
     console.log(`Running on port ${port}`)
